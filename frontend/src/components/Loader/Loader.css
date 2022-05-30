@@ -1,0 +1,36 @@
+.app-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1500;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.app-loading-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 45vh;
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 280px;
+    height: 100px;
+}
+
+.app-loading-content img {
+    width: 50px;
+    height: 50px;
+
+    animation: rotateLogo 1.5s infinite;
+}
+
+@keyframes rotateLogo {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+ 
